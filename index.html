@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web Project 2</title>
+        <link rel="stylesheet" href="./css/stylesheet.css">
+    </head>
+    <body>
+        <!-- Header -->
+
+        <header>
+            <div class="container">
+                <div class="mainlogo">
+                    <img src="./Images/logo.jpg">
+                </div>
+                <nav class="navbar">
+                    <ul class="navbar-menu">
+                      <li class="navbar-item"><a href="#" class="navbarlink">Home</a></li>
+                      <li class="navbar-item"><a href="#" class="navbarlink">About</a></li>
+                      <li class="navbar-item"><a href="#" class="navbarlink">Products</a></li>
+                      <li class="navbar-item"><a href="#" class="navbarlink">Shop</a></li>
+                      <li class="navbar-item"><a href="#" class="navbarlink">Blog</a></li>
+                      <li class="navbar-item"><a href="#" class="navbarlink">Contact</a></li>
+                    </ul>
+                   
+                </nav>
+                    <div class="action">
+                        <ul class="actionlist">
+                            <li class="actionbadge"><img src="./Images/magnifying-glass.png"></li>
+                            <li class="actionbadge"><img src="./Images/user.png"></li>
+                            <li class="actionbadge"><img src="./Images/heart.png"></li>
+                            <li class="actionbadge"><img src="./Images/shopping-bag.png"></li>
+                        </ul>
+                   
+                    <div class="menuicon">
+                        <img src="./Images/logos/menu.png" onclick="toggleNavbar()">
+                    </div>
+                    </div>
+                    
+            </div>
+        </header>
+
+        <!-- Section -->
+
+        <section class="sec">
+            <div class="mainimg">
+                <img src="./Images/sectionimg.jpeg">
+            </div>
+            <div class="maincard">
+                <div class="card"><img src="./Images/shoes1.jpeg">
+                <p class="content"><h4 class="title">Intruder Galosh Waterproof</h4><br>
+                    <b>Rs. 24,999.00</b><br><br>
+                    <input type="button" value="Buy" class="button" onclick="toggleForm(this)">
+                    <form class="buy-form" action="./orderplaced.html">
+                        <h4 class="checkout">Check Out</h4><br><br>
+                        <input type="text" placeholder="Name"><br><br>
+                        <input type="email" placeholder="Email"><br><br>
+                        <input type="number" placeholder="Contact Number"><br><br>
+                        <input type="submit" required>
+                    </form>
+                </p>
+            </div>
+                <div class="card"><img src="./Images/shoes3.jpeg">
+                <p class="content"><h4 class="title">Raider Sport</h4><br>
+                    <b>Rs. 24,999.00</b><br><br>
+                    <input type="button" value="Buy" class="button" onclick="toggleForm(this)">
+                    <form class="buy-form" action="./orderplaced.html">
+                        <h4 class="checkout">Check Out</h4><br><br>
+                        <input type="text" placeholder="Name"><br><br>
+                        <input type="email" placeholder="Email"><br><br>
+                        <input type="number" placeholder="Contact Number"><br><br>
+                        <input type="submit" required>
+                    </form>
+                </p>
+            </div>
+                <div class="card"><img src="./Images/shoes5.jpeg">
+                <p class="content"><h4 class="title">Raider Lace</h4><br>
+                    <b>Rs. 29,999.00</b><br><br>
+                    <input type="button" value="Buy" class="button" onclick="toggleForm(this)">
+                    <form class="buy-form">
+                        <h4 class="checkout">Check Out</h4><br><br>
+                        <input type="text" placeholder="Name"><br><br>
+                        <input type="email" placeholder="Email"><br><br>
+                        <input type="number" placeholder="Contact Number"><br><br>
+                        <input type="submit" required>
+                    </form>
+                </p>
+            </div>
+                <div class="card"><img src="./Images/shoes6.jpeg">
+                <p class="content"><h4 class="title">Inversion</h4><br>
+                    <b>Rs. 24,999.00</b><br><br>
+                    <input type="button" value="Buy" class="button" onclick="toggleForm(this)">
+                    <form class="buy-form">
+                        <h4 class="checkout">Check Out</h4><br><br>
+                        <input type="text" placeholder="Name"><br><br>
+                        <input type="email" placeholder="Email"><br><br>
+                        <input type="number" placeholder="Contact Number"><br><br>
+                        <input type="submit" required>
+                    </form>
+                </p>
+            </div>
+            </div>
+
+            <div class="imagetwo">
+                <img src="./Images/image2.jpeg">
+            </div>
+        </section>
+
+        <!-- Footer -->
+
+        <footer>
+            
+            <div class="poplinks">
+                <b>Popular Links</b><br><br>
+                <ul class="variety">
+                    <li>New Arrivals</li>
+                    <li>Sandals and<br> Slippers</li>
+                    <li>WaterProof</li>
+                    <li>Safety Shoes</li>
+                </ul>
+            </div>
+            
+            <div class="myaccount">
+                <b>My Account</b><br><br><br>
+                <ul class="Info">
+                    <li>Sign In</li>
+                    <li>Register</li>
+                    <li>Order Status</li>
+                    <li>Shopping Cart</li>
+                </ul>
+            </div>
+
+            <div class="contact">
+                <div class="logos"><img src="./Images/logos/facebook.png"></div>
+                <div class="logos"><img src="./Images/logos/instagram.png"></div>
+
+            </div>
+            
+            
+        </footer>
+
+
+
+        <script>
+
+            
+            function toggleForm(button) {
+
+            var form = button.nextElementSibling;
+
+            if (form.style.display === "block") {
+            
+                form.style.display = "none";
+            } 
+            
+            else {
+            
+                form.style.display = "block";
+            
+            }
+            
+            }
+
+
+            function toggleNavbar() {
+            var navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('open');
+        }
+
+        </script>
+
+    </body>
+</html>
