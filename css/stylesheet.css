@@ -268,6 +268,17 @@ footer{
     .menuicon{
         display: inline;
     }
+    .navbar.open{
+        display: block;
+        animation-name: data;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+    }
+    
+    @keyframes data{
+        from{ left: -400px;}
+        to{left: 0px;}
+    }
 }
 
 
@@ -298,14 +309,3 @@ footer{
     }
 }
 
-.navbar.open{
-    display: block;
-    animation-name: data;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-}
-
-@keyframes data{
-    from{ left: -400px;}
-    to{left: 0px;}
-}
